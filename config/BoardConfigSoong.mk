@@ -26,6 +26,7 @@ SOONG_CONFIG_lineageGlobalVars += \
     camera_skip_kind_check \
     aapt_version_code \
     target_power_libperfmgr_mode_extension_lib \
+    camera_needs_client_info_lib \
     sdmcore_has_is_display_hw_available_func \
     gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
@@ -59,6 +60,9 @@ define addVar
     SOONG_CONFIG_yaapVarsPlugin += $(1)
     SOONG_CONFIG_yaapVarsPlugin_$(1) := $$(subst ",\",$$($1))
 endef
+
+# Soong bool variables
+SOONG_CONFIG_lineageGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 
 # Set default values
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
