@@ -442,7 +442,7 @@ qcom_libfmjni {
 soong_config_module_type {
     name: "camera_needs_client_info_lib",
     module_type: "cc_defaults",
-    config_namespace: "infinityGlobalVars",
+    config_namespace: "lineageGlobalVars",
     bool_variables: ["camera_needs_client_info_lib"],
     properties: [
         "cppflags",
@@ -463,7 +463,7 @@ camera_needs_client_info_lib {
 soong_config_module_type {
     name: "needs_camera_boottime",
     module_type: "cc_defaults",
-    config_namespace: "infinityGlobalVars",
+    config_namespace: "lineageGlobalVars",
     bool_variables: ["needs_camera_boottime"],
     properties: ["cppflags"],
 }
@@ -480,7 +480,7 @@ needs_camera_boottime {
 soong_config_module_type {
     name: "target_camera_package_name",
     module_type: "cc_defaults",
-    config_namespace: "infinityGlobalVars",
+    config_namespace: "lineageGlobalVars",
     value_variables: ["target_camera_package_name"],
     properties: ["cppflags"],
 }
@@ -497,7 +497,7 @@ target_camera_package_name {
 soong_config_module_type {
     name: "include_miui_camera",
     module_type: "cc_defaults",
-    config_namespace: "infinityGlobalVars",
+    config_namespace: "lineageGlobalVars",
     bool_variables: ["include_miui_camera"],
     properties: ["cppflags"],
 }
@@ -513,7 +513,7 @@ include_miui_camera {
 soong_config_module_type {
     name: "uses_miui_camera",
     module_type: "cc_defaults",
-    config_namespace: "infinityGlobalVars",
+    config_namespace: "lineageGlobalVars",
     bool_variables: ["uses_miui_camera"],
     properties: ["cppflags"]
 }
